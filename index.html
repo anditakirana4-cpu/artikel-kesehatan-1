@@ -6,10 +6,6 @@
     <title>Pentingnya Menjaga Kesehatan Tubuh</title>
 
     <style>
-        /* =========================
-           RESET
-        ========================= */
-
         * {
             margin: 0;
             padding: 0;
@@ -23,133 +19,46 @@
             line-height: 1.8;
         }
 
-
-        /* =========================
-           NAVBAR
-        ========================= */
-
-        nav {
-            background: #062b5c;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            box-shadow: 0 3px 15px rgba(0, 40, 90, 0.2);
-        }
-
-        .logo {
-            font-size: 27px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        .logo span {
-            color: #61c7ff;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 28px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #61c7ff;
-        }
-
-
-        /* =========================
-           HEADER
-        ========================= */
-
+        /* JUDUL */
         .header {
-            background:
-                linear-gradient(
-                    135deg,
-                    #062b5c,
-                    #075b9d,
-                    #35b9f5
-                );
-
+            background: linear-gradient(135deg, #062b5c, #087fc1, #55c7f7);
             color: white;
             text-align: center;
-            padding: 85px 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: "";
-            position: absolute;
-            width: 250px;
-            height: 250px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 50%;
-            top: -100px;
-            left: -70px;
-        }
-
-        .header::after {
-            content: "";
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 50%;
-            bottom: -160px;
-            right: -80px;
+            padding: 65px 20px;
         }
 
         .header h1 {
-            font-size: 46px;
-            max-width: 850px;
-            margin: auto;
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 1;
+            font-size: 45px;
+            margin-bottom: 10px;
         }
 
         .header p {
-            font-size: 18px;
-            color: #e2f5ff;
-            position: relative;
-            z-index: 1;
+            font-size: 17px;
+            color: #e5f7ff;
         }
 
-
-        /* =========================
-           CONTAINER
-        ========================= */
-
+        /* CONTAINER */
         .container {
-            max-width: 950px;
-            margin: 55px auto;
+            max-width: 900px;
+            margin: 45px auto;
             padding: 0 20px;
         }
 
-
-        /* =========================
-           ARTIKEL
-        ========================= */
-
+        /* ARTIKEL */
         .article {
             background: white;
             padding: 45px;
-            border-radius: 22px;
-            box-shadow: 0 10px 35px rgba(0, 55, 110, 0.10);
-            border: 1px solid #dceeff;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0, 55, 110, 0.12);
         }
 
         .article h2 {
             color: #075b9d;
-            font-size: 29px;
+            font-size: 28px;
             margin-top: 38px;
             margin-bottom: 13px;
-            border-left: 5px solid #35b9f5;
             padding-left: 14px;
+            border-left: 5px solid #35b9f5;
         }
 
         .article p {
@@ -158,16 +67,12 @@
             text-align: justify;
         }
 
-
-        /* =========================
-           3 GAMBAR
-        ========================= */
-
+        /* 3 GAMBAR */
         .gambar-utama {
             width: 100%;
             height: 380px;
             object-fit: cover;
-            border-radius: 18px;
+            border-radius: 17px;
             margin-bottom: 28px;
             display: block;
             box-shadow: 0 8px 25px rgba(0, 70, 130, 0.15);
@@ -177,86 +82,31 @@
             width: 100%;
             height: 280px;
             object-fit: cover;
-            border-radius: 18px;
+            border-radius: 17px;
             margin: 10px 0 28px;
             display: block;
             box-shadow: 0 6px 20px rgba(0, 70, 130, 0.12);
         }
 
-
-        /* =========================
-           KOTAK INFORMASI
-        ========================= */
-
-        .info {
-            background: linear-gradient(
-                135deg,
-                #e4f5ff,
-                #ccecff
-            );
-
-            border-left: 6px solid #087fc1;
-            padding: 22px;
-            margin-top: 35px;
-            border-radius: 12px;
-        }
-
-        .info h3 {
-            color: #064b82;
-            margin-bottom: 8px;
-            font-size: 21px;
-        }
-
-        .info p {
-            margin-bottom: 0;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
-
+        /* FOOTER */
         footer {
             background: #062b5c;
             color: white;
             text-align: center;
-            padding: 35px 20px;
-            margin-top: 60px;
-        }
-
-        footer h3 {
-            font-size: 22px;
-            margin-bottom: 8px;
-            color: #61c7ff;
+            padding: 25px;
+            margin-top: 50px;
         }
 
         footer p {
             font-size: 14px;
-            color: #d5eaff;
-            margin: 4px;
+            color: #d9efff;
         }
 
-
-        /* =========================
-           RESPONSIVE HP
-        ========================= */
-
+        /* HP */
         @media (max-width: 768px) {
 
-            nav {
-                padding: 15px 5%;
-            }
-
-            .logo {
-                font-size: 23px;
-            }
-
-            nav a {
-                display: none;
-            }
-
             .header {
-                padding: 60px 20px;
+                padding: 50px 20px;
             }
 
             .header h1 {
@@ -264,7 +114,7 @@
             }
 
             .header p {
-                font-size: 16px;
+                font-size: 15px;
             }
 
             .container {
@@ -287,12 +137,10 @@
 
             .gambar-utama {
                 height: 230px;
-                border-radius: 14px;
             }
 
             .gambar-artikel {
                 height: 200px;
-                border-radius: 14px;
             }
         }
     </style>
@@ -300,50 +148,17 @@
 
 <body>
 
-
-    <!-- =========================
-         NAVBAR
-    ========================= -->
-
-    <nav>
-
-        <div class="logo">
-            Sehat<span>Kita</span>
-        </div>
-
-        <div>
-            <a href="#">Beranda</a>
-            <a href="#artikel">Artikel</a>
-        </div>
-
-    </nav>
-
-
-    <!-- =========================
-         HEADER
-    ========================= -->
-
+    <!-- JUDUL SAJA -->
     <header class="header">
-
-        <h1>
-            Pentingnya Menjaga Kesehatan Tubuh
-        </h1>
-
-        <p>
-            Informasi sederhana untuk membangun kebiasaan hidup sehat
-        </p>
-
+        <h1>Pentingnya Menjaga Kesehatan Tubuh</h1>
+        <p>Informasi sederhana untuk membangun kebiasaan hidup sehat</p>
     </header>
 
 
-    <!-- =========================
-         ARTIKEL
-    ========================= -->
-
-    <main class="container" id="artikel">
+    <!-- ARTIKEL -->
+    <main class="container">
 
         <article class="article">
-
 
             <!-- GAMBAR 1 -->
             <img
@@ -351,7 +166,6 @@
                 alt="Ilustrasi kesehatan tubuh"
                 class="gambar-utama"
             >
-
 
             <p>
                 Kesehatan merupakan salah satu hal yang sangat penting dalam kehidupan.
@@ -362,10 +176,7 @@
             </p>
 
 
-            <!-- POLA MAKAN -->
-
             <h2>Pola Makan yang Sehat</h2>
-
 
             <!-- GAMBAR 2 -->
             <img
@@ -373,7 +184,6 @@
                 alt="Makanan sehat dan bergizi"
                 class="gambar-artikel"
             >
-
 
             <p>
                 Salah satu cara menjaga kesehatan tubuh adalah dengan mengonsumsi makanan
@@ -390,10 +200,7 @@
             </p>
 
 
-            <!-- AKTIVITAS FISIK -->
-
             <h2>Rutin Melakukan Aktivitas Fisik</h2>
-
 
             <!-- GAMBAR 3 -->
             <img
@@ -401,7 +208,6 @@
                 alt="Aktivitas fisik dan olahraga"
                 class="gambar-artikel"
             >
-
 
             <p>
                 Aktivitas fisik merupakan bagian penting dari pola hidup sehat.
@@ -416,8 +222,6 @@
                 melakukannya secara teratur dan sesuai dengan kemampuan tubuh.
             </p>
 
-
-            <!-- ISTIRAHAT -->
 
             <h2>Istirahat yang Cukup</h2>
 
@@ -435,8 +239,6 @@
             </p>
 
 
-            <!-- KEBERSIHAN -->
-
             <h2>Menjaga Kebersihan</h2>
 
             <p>
@@ -451,39 +253,15 @@
                 untuk belajar, beraktivitas, dan beristirahat.
             </p>
 
-
-            <!-- INFO -->
-
-            <div class="info">
-
-                <h3>💙 Tips Hidup Sehat</h3>
-
-                <p>
-                    Mulailah menjaga kesehatan dari kebiasaan sederhana setiap hari,
-                    seperti makan bergizi, aktif bergerak, cukup beristirahat,
-                    minum air putih, dan menjaga kebersihan.
-                </p>
-
-            </div>
-
         </article>
 
     </main>
 
 
     <!-- FOOTER -->
-
     <footer>
-
-        <h3>TETAP JAGA KESEHATAN</h3>
-
-        <p>
-            Informasi kesehatan untuk kehidupan yang lebih sehat.
-        </p>
-
-        <Marquee>SEKIAN INFORMASI TENTANG KESEHATAN</Marquee>
-
+        <p>Artikel Kesehatan</p>
     </footer>
 
 </body>
-    </html>
+</html>
